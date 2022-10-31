@@ -8,8 +8,12 @@
     <p>
       <%= link_to "Show this post", post %>
     </p>
+
+    <P>ays post@ uni <%= post.comments.count %>
+       comment </P>
   <% end %>
 </div>
-<%= paginate @posts %>
+   <%= paginate @posts %> 
+  
 
 <%= link_to "New post", new_post_path %>
